@@ -183,7 +183,7 @@
                             >
                                 <option selected>Select a Node by ID</option>
                                 {% for node in nodes %}
-                                    <option value="{{ str.encode(node.id,'utf-8') }}">{{str.encode(node.id,'utf-8')}}</option>
+                                    <option value="{{ node.id }}">{{node.id}}</option>
                                 {% endfor %}
                             </select>
                         </div>
